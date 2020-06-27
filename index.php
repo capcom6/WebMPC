@@ -1,26 +1,5 @@
 <?php
-    $radios = [
-        'silverrain' => [
-            'title' => 'Серебряный Дождь Красноярск',
-            'logo' => 'silverrain.png',
-            'url' => 'http://krassilver.ru/online'
-        ],
-        'radio7' => [
-            'title' => 'Радио 7 На семи холмах',
-            'logo' => 'radio7.jpg',
-            'url' => 'http://hls-01-radio7.emgsound.ru/13/192/playlist.m3u8'
-        ],
-        'europaplus' => [
-            'title' => 'Европа Плюс',
-            'logo' => 'EuropaPlus.png',
-            'url' => 'http://hls-02-europaplus.emgsound.ru/11/192/playlist.m3u8'
-        ],
-        'arminvanbuuren' => [
-            'title' => 'Armin van Buuren - A State of Trance',
-            'logo' => 'arminvanbuuren.png',
-            'url' => 'http://139.99.105.227/Trance2'
-        ]
-    ];
+    $radios = json_decode(file_get_contents('json/radio.json'), TRUE);
 
     $cmd = filter_input(INPUT_GET, 'c');
     $radio = filter_input(INPUT_GET, 'r');
