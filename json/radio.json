@@ -1,8 +1,13 @@
 {
     "silverrain": {
-            "title": "Серебряный Дождь Красноярск",
-            "logo": "silverrain.png",
-            "url": "http://krassilver.ru/online"
+        "title": "Серебряный Дождь Красноярск",
+        "logo": "silverrain.png",
+        "url": "http://krassilver.ru/online"
+    },
+    "991fm": {
+        "title": "99,1 FM Красноярск",
+        "logo": "991fm.png",
+        "url": "https://online.99-1.ru/99i1"
     },
     "radio7": {
         "title": "Радио 7 На семи холмах",
@@ -13,6 +18,11 @@
         "title": "Европа Плюс",
         "logo": "EuropaPlus.png",
         "url": "http://hls-02-europaplus.emgsound.ru/11/192/playlist.m3u8"
+    },
+    "maximum": {
+        "title": "MAXIMUM",
+        "logo": "maximum.jpg",
+        "url": "https://maximum.hostingradio.ru/maximum96.aacp"
     },
     "arminvanbuuren": {
         "title": "Armin van Buuren - A State of Trance",

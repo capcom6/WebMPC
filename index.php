@@ -5,10 +5,14 @@
     $radio = filter_input(INPUT_GET, 'r');
     if (in_array($cmd, ['play', 'stop'])) {
         exec("mpc " . $cmd, $status);
+        header('Location: /');
+        die();
     } elseif (isset($radios[$radio])) {
         exec("mpc clear");
         exec("mpc add " . $radios[$radio]['url']);
         exec("mpc play", $status);
+        header('Location: /');
+        die();
     } else {
         exec("mpc", $status);
     }
