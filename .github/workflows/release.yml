@@ -26,7 +26,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: mkdir dist/ && cd src/ && tar cxvf "../dist/release.tar.gz" .
+        run: mkdir dist/ && cd src/ && tar czvf "../dist/release.tar.gz" .
 
       - uses: ncipollo/release-action@v1
         with:
