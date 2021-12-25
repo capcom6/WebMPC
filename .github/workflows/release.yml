@@ -26,9 +26,9 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: mkdir dist/ && cd src/ && tar cxvf "../dist/release-${GITHUB_REF_NAME}.tar.gz" .
+        run: mkdir dist/ && cd src/ && tar cxvf "../dist/release.tar.gz" .
 
       - uses: ncipollo/release-action@v1
         with:
-          artifacts: "dist/release-${GITHUB_REF_NAME}.tar.gz"
+          artifacts: "dist/release.tar.gz"
           token: ${{ secrets.GITHUB_TOKEN }}
