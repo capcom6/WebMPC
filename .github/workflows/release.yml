@@ -26,9 +26,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        env:
-          GITHUB_REF_NAME: ${{ env.GITHUB_REF_NAME }}
-        run: mkdir dist/ && cd src/ && tar cxvf ../dist/release-${GITHUB_REF_NAME}.tar.gz .
+        run: mkdir dist/ && cd src/ && tar cxvf "../dist/release-${GITHUB_REF_NAME}.tar.gz" .
 
       - uses: ncipollo/release-action@v1
         with:
